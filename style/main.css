@@ -1,0 +1,350 @@
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+*:focus {
+    outline: 0;
+    outline: none;
+}
+
+body {
+    color: #3e3e3e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 83%;
+    line-height: normal;
+
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #444343;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: 5em;
+    margin-bottom: 0.5%;
+}
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.wrapper {
+    width: 65vw;
+    margin-left: 15vw;
+}
+
+
+a, #teaching .md-trigger {
+    color: #3988e2;
+    text-decoration: none;
+    border-bottom: 1.4px solid #3988e2;
+}
+
+a:hover,
+#teaching .md-trigger:hover {
+    color: #77b7dc;
+    transition: .5s ease;
+    border-bottom: 1.4px solid #77b7dc;
+}
+
+.flexbox-container {
+    /* margin-top: 3vh; */
+    width: 75vw;
+    /* TODO: MAKE THIS WIDTH RESPONSIVE PER SCREEN SIZE */
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+#about .horizontal-nav > .flexbox-container,
+#projects .horizontal-nav > .flexbox-container,
+#teaching .horizontal-nav > .flexbox-container {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 170px;
+
+    -webkit-flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+.title {
+    height: auto;
+}
+
+#about {
+    background-color: #f8f8f9;
+}
+
+#about .wrapper {
+    position: absolute;
+    bottom: 20vh;
+}
+
+#about .title {
+    font-size: 4.4em;
+    letter-spacing: 0px;
+}
+
+.content {
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 600px;
+}
+
+#projects {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 18vh;
+    overflow-x: hidden;
+}
+
+#projects .wrapper {
+    margin-left: 10vw;
+}
+
+#projects .wrapper a {
+    border-bottom: none;
+}
+
+.projects-content {
+    display: inline-block;
+    width: 475px;
+    height: 350px;
+    margin-bottom: 10px;
+    flex: 0 1 auto;
+    position: relative;
+}
+
+.preview {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff; /* white */
+}
+
+.projects-content:hover .overlay {
+    opacity: 0.95;
+}
+
+.text {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 35px;
+}
+
+.project-type {
+    color: #626264;
+    font-size: 19px;
+}
+
+#teaching {
+    background-color: #f8f8f9;
+}
+
+#teaching .center {
+    width: 85vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+#teaching .wrapper .flexbox-container {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#teaching .title {
+    line-height: 1em;
+}
+
+#teaching .left {
+    margin-right: 6%;
+    margin-bottom: 3%;
+}
+
+#teaching .right {
+    width: 450px;
+    font-weight: 300;
+    letter-spacing: 0.2pt;
+    margin-bottom: 3%;
+    line-height: 1.5em;
+}
+
+#teaching .archive .left {
+    width: 130px;
+}
+
+#teaching .archive .right {
+    line-height: 1em;
+}
+
+#teaching .archive {
+    margin-bottom: -3%;
+}
+
+.teaching-content {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+}
+
+.md-content .flexbox-container {
+    margin-top: 3%;
+    line-height: 1em;
+}
+
+.md-content .right ul {
+    list-style-type: none;
+    margin-left: -5%;
+}
+
+.centered-flexbox {
+    margin-top: 0;
+    width: 100%;
+    -webkit-flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+}
+
+.flexbox-content {
+    font-size: 1.3em;
+    font-weight: 600;
+    height: auto;
+    flex: 0 1 auto;
+    font-family: "Open Sans";
+}
+
+.semester {
+    display: inline-block;
+    width: fit-content;
+    margin-right: 3%;
+
+}
+
+#contact {
+    position: relative;
+    height: 31vh;
+    display: flex;
+    align-items: center;
+}
+
+#contacts-content {
+    margin-left: 6vw;
+    margin-top: 5.5vw;
+}
+
+.contacts-flexbox > .flexbox-container {
+    width: 55vw;
+}
+
+.left, .middle, .right {
+    display: inline-block;
+}
+
+.contacts-title {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.05em;
+    letter-spacing: 0.25pt;
+    text-transform: lowercase;
+}
+
+.contacts-subtitle {
+    font-size: 0.85em;
+    color: #575656;
+    font-weight: lighter;
+}
+
+.contacts-subtitle a {
+    width: fit-content;
+    color: #575656;
+    border-bottom: none;
+    font-weight: lighter;
+}
+
+.contacts-flexbox {
+    width: 100vw;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+#copyright {
+    display: inline-block;
+    font-family: "Karla", sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+
+    align-self: flex-end;
+    position: absolute;
+    right: 6vw;
+}
+
+/* GENERAL STYLING */
+.hidden {
+    display: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.emphasize {
+    font-weight: 500;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */

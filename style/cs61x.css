@@ -1,0 +1,113 @@
+body {
+    overflow-y: hidden;
+}
+.horizontal-nav {
+    margin-right: 1%;
+}
+
+.horizontal-nav > .flexbox-container {
+    height: 60px;
+    align-items: center;
+
+}
+
+.horizontal-nav a  {
+    border-bottom: none;
+
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    color: #5c5d69;
+    line-height: 1.6em;
+    letter-spacing: 2px;
+}
+
+.horizontal-nav .one,
+.horizontal-nav .two,
+.horizontal-nav .three {
+    width: fit-content;
+    margin-right: 3%;
+}
+
+#cs61a .wrapper {
+    margin-top: 17vh;
+    font-weight:normal;
+}
+
+#cs61a .wrapper > .flexbox-container {
+    margin-top: 3%;
+    width: 70vw;
+    -webkit-flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.row-one, .row-two, .row-three {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+.row-two {
+    margin-bottom: 4%;
+}
+
+.row-three {
+    /* border: 1px solid red; */
+}
+
+.content {
+    font-weight: 300;
+}
+
+.row-one > .flexbox-container,
+.row-two > .flexbox-container,
+.row-three > .flexbox-container {
+    margin-top: 0;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    position: relative;
+}
+
+.row-three > .flexbox-container .flexbox-container {
+    width: 80%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.row-three .middle {
+    margin-bottom: 3%;
+}
+
+.content .left {
+    margin-right: 5%;
+    width: 100px;
+    font-weight: 700;
+    display: block;
+}
+
+.content .middle, .content .right {
+    margin-right: 3%;
+    width: 300px;
+    display: block;
+}
+
+/* GENERAL STYLING */
+.emphasize {
+    color: black;
+}
+
+.middle .active {
+    color: #3988e2;
+    text-decoration: line-through;
+}

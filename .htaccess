@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# Redirect to HTML if it exists.
+# e.g. example.com/foo will display the contents of example.com/foo.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+#301 from example.com/page.html to example.com/page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+RewriteRule ^(.*)\.pdf$ /$1 [R=301,L]
+
+RewriteRule http://www.anniewtang.github.io/index.html / [R=301,L]
+RewriteRule http://www.anniewtang.github.io/index.html#teaching /teaching  [R=301,L]
+RewriteRule http://www.anniewtang.github.io/index.html#projects /projects  [R=301,L]
+# RewriteRule http://www.anniewtang.github.io/assets/resume.pdf /resume  [R=301,L]

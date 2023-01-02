@@ -1,0 +1,50 @@
+.horizontal-nav {
+    padding-right: 1%;
+}
+
+.horizontal-nav > .flexbox-container {
+    margin-left: 3%;
+    width: 100%;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.horizontal-nav li {
+    display: inline;
+    text-align: right;
+}
+
+.horizontal-nav .one,
+.horizontal-nav .two,
+.horizontal-nav .three,
+.horizontal-nav .four,
+.horizontal-nav .five {
+    width: fit-content;
+    margin-right: 2%;
+}
+
+.horizontal-nav a  {
+    text-transform: uppercase;
+    border-bottom: none;
+
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    color: #5c5d69;
+    line-height: 1.6em;
+    letter-spacing: 2px;
+}
+
+.horizontal-nav a:hover, .horizontal-nav .active {
+    color: #3988e2;
+    text-decoration: line-through;
+    border-bottom: none;
+    transition: none;
+}
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
